@@ -19,4 +19,5 @@ It start s with the image acquisiton, when the images are saved a subset of imag
 
 ## What will come up next
 
-Improvement of text recognition to get ride of the forced labelling.
+- Improved text recognition
+- Drag&Drop of images instead of numbered lst to select from
