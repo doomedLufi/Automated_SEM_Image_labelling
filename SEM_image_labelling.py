@@ -90,7 +90,7 @@ def detect_scale_fixed_position(image, start_x=None, start_y=None):
    
     return scale_length
 
-
+# Function for recognising the scale text in a fixed area
 def extract_text_from_roi(image_path):
     # Load image
     image = cv2.imread(image_path)
@@ -117,8 +117,9 @@ def extract_text_from_roi(image_path):
 
     return extracted_text
 
+# Correcting recent issues with the text recognition
 def correct_text(text):
-    # Replace misrecognized "u" with "µ"
+    # Replace misrecognized "u" or "p" with "µ"
     corrected_text = text.replace("p", "µ").replace("u", "µ")
 
     # If OCR only detects "µm", assume it should be "1 µm"
@@ -127,7 +128,7 @@ def correct_text(text):
 
     return corrected_text
 
-
+# Function to add label on banner free image
 def add_new_scale_with_pillow(image, scale_length_pixels, scale_length_real, image_path, font_path="arial.ttf"):
     """
     Adds a new scale in the lower right area of the image and uses Pillow for texts.
