@@ -11,6 +11,8 @@ For those applications this code ist here. The Scale bar and it's caption on the
 <img src="3033_IBE600W_25min_pat_15_processed.png" width = "500">
 
 
+The images are saved in .png, .jpg and .svg in a specified folder.
+
 
 
 ## What do you need
