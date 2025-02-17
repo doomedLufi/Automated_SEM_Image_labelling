@@ -19,6 +19,38 @@ The images are saved in .png, .jpg and .svg in a specified folder.
 
 It start s with the image acquisiton, when the images are saved a subset of image has to be saved. This subset does not have a banner and is called ***PlainImages*** by default of the Zeiss SmartSEM software. These images should be kept as a subfolder in the image folder.
 
+The following packages needs to be installed:
+opencv-python: 
+```
+pip install opencv-python
+```
+easyocr: 
+```
+pip install easyocr
+```
+
+numpy: 
+```
+pip install numpy
+```
+
+pillow: 
+```
+pip install pillow
+```
+
+matplotlib: ```
+pip install matplotlib
+```
+
+tkinter:
+Is included with python's standard library, for Linux use:
+```
+sudo apt install python3-tk  # For Ubuntu/Debian
+sudo dnf install python3-tkinter  # For Fedora
+```
+
+
 ## What will come up next
 
 - Improved text recognition
