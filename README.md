@@ -39,7 +39,8 @@ pillow:
 pip install pillow
 ```
 
-matplotlib: ```
+matplotlib:
+```
 pip install matplotlib
 ```
 
