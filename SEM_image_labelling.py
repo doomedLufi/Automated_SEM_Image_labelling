@@ -120,7 +120,7 @@ def extract_text_from_roi(image_path):
 # Correcting recent issues with the text recognition
 def correct_text(text):
     # Replace misrecognized "u" or "p" with "µ"
-    corrected_text = text.replace("p", "µ").replace("u", "µ")
+    corrected_text = text.replace("p", "µ").replace("u", "µ").replace("W","µ")
 
     # If OCR only detects "µm", assume it should be "1 µm"
     if corrected_text.strip() in ["µm", "um"]:
